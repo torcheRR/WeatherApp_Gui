@@ -49,7 +49,7 @@ public class WeatherAppGui extends JFrame {
         add(searchTextField);
 
         //weather image
-        JLabel weatherConditionImage = new JLabel(loadImage("src/assets/cloudy.png"));
+        JLabel weatherConditionImage = new JLabel(loadImage("WeatherApp_Gui/src/assets/cloudy.png"));
         weatherConditionImage.setBounds(0, 125, 450, 217);
 
         //add image
@@ -76,7 +76,7 @@ public class WeatherAppGui extends JFrame {
         add(weatherConditionDesc);
 
         //humidity image
-        JLabel humidityImage = new JLabel(loadImage("src/assets/humidity.png"));
+        JLabel humidityImage = new JLabel(loadImage("WeatherApp_Gui/src/assets/humidity.png"));
         humidityImage.setBounds(15, 500, 74, 66);
 
         //add humidity image
@@ -91,7 +91,7 @@ public class WeatherAppGui extends JFrame {
         add(humidityText);
 
         //windspeed image
-        JLabel windSpeedImage = new JLabel(loadImage("src/assets/windspeed.png"));
+        JLabel windSpeedImage = new JLabel(loadImage("WeatherApp_Gui/src/assets/windspeed.png"));
         windSpeedImage.setBounds(220, 500, 74, 66);
 
         //add windSpeed image
@@ -106,7 +106,7 @@ public class WeatherAppGui extends JFrame {
         add(windSpeedText);
 
         //search button
-        JButton searchButton = new JButton(loadImage("src/assets/search.png"));
+        JButton searchButton = new JButton(loadImage("WeatherApp_Gui/src/assets/search.png"));
 
         //change the cursor to a hand cursor when hovering over this button
         searchButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
@@ -133,16 +133,16 @@ public class WeatherAppGui extends JFrame {
                 //depending on the condition, we will update the weather image that corresponds with the condition
                 switch (weatherCondition) {
                     case "Clear":
-                        weatherConditionImage.setIcon(loadImage("src/assets/clear.png"));
+                        weatherConditionImage.setIcon(loadImage("WeatherApp_Gui/src/assets/clear.png"));
                         break;
                     case "Cloudy":
-                        weatherConditionImage.setIcon(loadImage("src/assets/cloudy.png"));
+                        weatherConditionImage.setIcon(loadImage("WeatherApp_Gui/src/assets/cloudy.png"));
                         break;
                     case "Rain":
-                        weatherConditionImage.setIcon(loadImage("src/assets/rain.png"));
+                        weatherConditionImage.setIcon(loadImage("WeatherApp_Gui/src/assets/rain.png"));
                         break;
                     case "Snow":
-                        weatherConditionImage.setIcon(loadImage("src/assets/snow.png"));
+                        weatherConditionImage.setIcon(loadImage("WeatherApp_Gui/src/assets/snow.png"));
                         break;
                 }
 
